@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Assignment 1: JavaScript Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Assignment 1: JavaScript Calculator</h2>
+    <p class="description">Basic arithmetic operations using JavaScript functions and a switch statement.</p>
+
+    <div class="calculator">
+      <!-- Calculator Display -->
+      <input type="text" id="display" class="calc-display" readonly value="0">
+
+      <!-- Calculator Buttons -->
+      <div class="buttons">
+        <button type="button" class="btn btn-clear" onclick="clearDisplay()">C</button>
+        <button type="button" class="btn" onclick="deleteLast()">DEL</button>
+        <button type="button" class="btn btn-op" onclick="setOperator('/')">/</button>
+        <button type="button" class="btn btn-op" onclick="setOperator('*')">*</button>
+
+        <button type="button" class="btn" onclick="appendNumber('7')">7</button>
+        <button type="button" class="btn" onclick="appendNumber('8')">8</button>
+        <button type="button" class="btn" onclick="appendNumber('9')">9</button>
+        <button type="button" class="btn btn-op" onclick="setOperator('-')">-</button>
+
+        <button type="button" class="btn" onclick="appendNumber('4')">4</button>
+        <button type="button" class="btn" onclick="appendNumber('5')">5</button>
+        <button type="button" class="btn" onclick="appendNumber('6')">6</button>
+        <button type="button" class="btn btn-op" onclick="setOperator('+')">+</button>
+
+        <button type="button" class="btn" onclick="appendNumber('1')">1</button>
+        <button type="button" class="btn" onclick="appendNumber('2')">2</button>
+        <button type="button" class="btn" onclick="appendNumber('3')">3</button>
+        <button type="button" class="btn btn-equal" onclick="handleCalculate()">=</button>
+
+        <button type="button" class="btn btn-zero" onclick="appendNumber('0')">0</button>
+        <button type="button" class="btn" onclick="appendNumber('.')">.</button>
+      </div>
+    </div>
+
+    <div class="nav-links">
+      <a href="../index.html">← Back to All Assignments</a>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

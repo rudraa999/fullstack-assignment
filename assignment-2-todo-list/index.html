@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Assignment 2: DOM-based To-Do List</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Assignment 2: To-Do List</h2>
+    <p class="description">Add, mark completed, and delete tasks using DOM methods.</p>
+
+    <!-- Input Section -->
+    <div class="input-section">
+      <input type="text" id="taskInput" placeholder="Enter a new task...">
+      <button id="addBtn" onclick="addTask()">Add Task</button>
+    </div>
+
+    <!-- Task List -->
+    <ul id="taskList">
+      <!-- Tasks added dynamically via JavaScript DOM methods -->
+    </ul>
+
+    <div class="nav-links">
+      <a href="../index.html">← Back to All Assignments</a>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

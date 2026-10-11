@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #f4f6f8;
+  color: #333333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.container {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+  width: 100%;
+  max-width: 450px;
+}
+
+h2 {
+  font-size: 1.3rem;
+  margin-bottom: 6px;
+  color: #222222;
+  text-align: center;
+}
+
+.description {
+  font-size: 0.85rem;
+  color: #666666;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.input-section {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+#taskInput {
+  flex: 1;
+  padding: 10px 12px;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+  font-size: 0.95rem;
+  outline: none;
+}
+
+#taskInput:focus {
+  border-color: #0066cc;
+}
+
+#addBtn {
+  background-color: #0066cc;
+  color: #ffffff;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.95rem;
+}
+
+#addBtn:hover {
+  background-color: #0052a3;
+}
+
+#taskList {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.task-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 12px;
+  background-color: #fafafa;
+  border: 1px solid #e5e7eb;
+  border-radius: 4px;
+}
+
+.task-text {
+  flex: 1;
+  cursor: pointer;
+  font-size: 0.95rem;
+}
+
+/* Strikethrough when marked completed */
+.task-item.completed .task-text {
+  text-decoration: line-through;
+  color: #888888;
+}
+
+.btn-delete {
+  background-color: #fee2e2;
+  color: #dc2626;
+  border: 1px solid #fca5a5;
+  padding: 4px 8px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.8rem;
+}
+
+.btn-delete:hover {
+  background-color: #fecaca;
+}
+
+.nav-links {
+  margin-top: 25px;
+  text-align: center;
+}
+
+.nav-links a {
+  color: #0066cc;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.nav-links a:hover {
+  text-decoration: underline;
+}
